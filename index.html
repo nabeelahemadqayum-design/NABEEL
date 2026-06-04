@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible India - Top Destinations</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 scroll-smooth">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wide text-orange-600">
+                Incredible<span class="text-emerald-600">India</span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-orange-500 transition">Home</a>
+                <a href="#destinations" class="hover:text-orange-500 transition">Destinations</a>
+                <a href="#about" class="hover:text-orange-500 transition">About</a>
+                <a href="#contact" class="hover:text-orange-500 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl text-gray-700">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative text-center text-white px-4 max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Celebrate the Beauty of India</h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">From the snow-capped Himalayas to the serene backwaters of Kerala, explore a land of endless wonders.</p>
+            <a href="#destinations" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full transition shadow-lg inline-block">
+                Explore Destinations
+            </a>
+        </div>
+    </section>
+
+    <!-- Top Destinations Section -->
+    <section id="destinations" class="py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <span class="text-orange-600 font-bold tracking-wider uppercase text-sm">Our Top Picks</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2 text-gray-900">Iconic Places to Visit</h2>
+            <div class="w-20 h-1 bg-orange-500 mx-auto mt-4 rounded"></div>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1: Taj Mahal -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80" alt="Taj Mahal" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-gray-800 font-semibold px-3 py-1 rounded-full text-sm">Agra</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">The Taj Mahal</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">One of the Seven Wonders of the World, this ivory-white marble mausoleum is the ultimate symbol of eternal love.</p>
+                    <div class="flex items-center text-orange-500 font-medium text-sm cursor-pointer hover:underline">
+                        Read Guide <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Kerala Backwaters -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=800&q=80" alt="Kerala Backwaters" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-gray-800 font-semibold px-3 py-1 rounded-full text-sm">Kerala</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Kerala Backwaters</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Cruising through the tranquil palm-fringed canals of Alleppey on a traditional houseboat is pure bliss.</p>
+                    <div class="flex items-center text-orange-500 font-medium text-sm cursor-pointer hover:underline">
+                        Read Guide <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Jaipur -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1477584322814-3da237da47bc?auto=format&fit=crop&w=800&q=80" alt="Hawa Mahal Jaipur" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-gray-800 font-semibold px-3 py-1 rounded-full text-sm">Rajasthan</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">The Pink City (Jaipur)</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Immerse yourself in royal history with majestic forts, opulent palaces, and the iconic pink facades of Hawa Mahal.</p>
+                    <div class="flex items-center text-orange-500 font-medium text-sm cursor-pointer hover:underline">
+                        Read Guide <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Varanasi -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1561361531-99e224e9f5e2?auto=format&fit=crop&w=800&q=80" alt="Varanasi Ghats" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-gray-800 font-semibold px-3 py-1 rounded-full text-sm">Uttar Pradesh</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Varanasi Ghats</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">One of the oldest continuously inhabited cities in the world. Witness the magical evening Ganga Aarti ritual.</p>
+                    <div class="flex items-center text-orange-500 font-medium text-sm cursor-pointer hover:underline">
+                        Read Guide <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Ladakh -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=800&q=80" alt="Ladakh Mountains" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-gray-800 font-semibold px-3 py-1 rounded-full text-sm">Leh Ladakh</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Leh Ladakh</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">A paradise for adventure seekers, offering dramatic desert-mountain landscapes and deep blue high-altitude lakes.</p>
+                    <div class="flex items-center text-orange-500 font-medium text-sm cursor-pointer hover:underline">
+                        Read Guide <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Goa Beaches -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Goa Beach" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-gray-800 font-semibold px-3 py-1 rounded-full text-sm">Goa</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Beaches of Goa</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Relax on golden sands, enjoy vibrant nightlife, and experience a unique blend of Indian and Portuguese cultures.</p>
+                    <div class="flex items-center text-orange-500 font-medium text-sm cursor-pointer hover:underline">
+                        Read Guide <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Brief About/Feature Section -->
+    <section id="about" class="bg-orange-50 py-20 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold text-gray-950 mb-4">Why Travel to India?</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    India offers an astonishing variety of landscapes, cultures, and traditions. It is a land where ancient spirituality meets rapid modern evolution, promising an unforgettable journey for every type of traveler.
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> Rich Culinary Heritage</div>
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> Deep Spiritual and Historical Roots</div>
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> Diverse Ecosystems and Wildlife</div>
+                </div>
+            </div>
+            <div class="flex-1 w-full">
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=80" alt="India Culture" class="rounded-2xl shadow-lg w-full object-cover h-72">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 max-w-lg mx-auto px-6">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold">Plan Your Trip</h2>
+            <p class="text-gray-600 mt-2">Get custom itineraries tailored perfectly for you.</p>
+        </div>
+        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Inquiry Submitted successfully!');">
+            <div>
+                <label class="block text-sm font-semibold mb-1">Your Name</label>
+                <input type="text" placeholder="John Doe" required class="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold mb-1">Email Address</label>
+                <input type="email" placeholder="john@example.com" required class="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold mb-1">Message / Destination of Interest</label>
+                <textarea rows="4" placeholder="Tell us where you want to go..." class="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl transition shadow-md">
+                Send Inquiry
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm border-t border-gray-800">
+        <p>&copy; 2026 Incredible India Showcase. Built beautifully with HTML & Tailwind.</p>
+    </footer>
+
+</body>
+</html>
